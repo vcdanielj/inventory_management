@@ -2,15 +2,15 @@
 
 {% block content %}
 	<div>
-		<a href="{% url 'dashboard' %}" class="btn btn-outline-primary my-3 mx-4">Go back</a>
+		<a href="{% url 'dashboard' %}" class="btn btn-outline-primary my-3 mx-4">Regresar</a>
 		<div class="row">
 			<form method="POST" class="col-sm-11 col-md-4 mx-auto mt-5">
 				{% csrf_token %}
-				<h1 class="fw-light">Are you sure you want to delete {{ item.name }}?</h1>
-				<p class="fw-light">This cannot be undone</p>
+				<h1 class="fw-light">¿Estas seguro que quieres borrar {{ item.name }}?</h1>
+				<p class="fw-light">Esto no se puede Deshacer</p>
 
 				<div>
-					<button class="btn btn-danger">Delete</button>
+					<button class="btn btn-danger">Borrar</button>
 				</div>
 			</form>
 		</div>
